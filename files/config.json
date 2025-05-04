@@ -11,26 +11,26 @@
             "settings":{
                 "clients":[
                     {
-                        "id":"986e0d08-b275-4dd3-9e75-f3094b36fa2a",
+                        "id":"2110bff8-9813-471a-90ee-e16898258c1e",
                         "flow":"xtls-rprx-vision"
                     }
                 ],
                 "decryption":"none",
                 "fallbacks":[
                     {
-                        "dest":3001
+                        "dest":5001
                     },
                     {
                         "path":"/vless-argo",
-                        "dest":3002
+                        "dest":5002
                     },
                     {
                         "path":"/vmess-argo",
-                        "dest":3003
+                        "dest":5003
                     },
                     {
                         "path":"/trojan-argo",
-                        "dest":3004
+                        "dest":5004
                     }
                 ]
             },
@@ -39,13 +39,13 @@
             }
         },
         {
-            "port":3001,
+            "port":5001,
             "listen":"127.0.0.1",
             "protocol":"vless",
             "settings":{
                 "clients":[
                     {
-                        "id":"986e0d08-b275-4dd3-9e75-f3094b36fa2a"
+                        "id":"2110bff8-9813-471a-90ee-e16898258c1e"
                     }
                 ],
                 "decryption":"none"
@@ -56,13 +56,13 @@
             }
         },
         {
-            "port":3002,
+            "port":5002,
             "listen":"127.0.0.1",
             "protocol":"vless",
             "settings":{
                 "clients":[
                     {
-                        "id":"986e0d08-b275-4dd3-9e75-f3094b36fa2a",
+                        "id":"2110bff8-9813-471a-90ee-e16898258c1e",
                         "level":0
                     }
                 ],
@@ -76,7 +76,7 @@
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
@@ -86,13 +86,13 @@
             }
         },
         {
-            "port":3003,
+            "port":5003,
             "listen":"127.0.0.1",
             "protocol":"vmess",
             "settings":{
                 "clients":[
                     {
-                        "id":"986e0d08-b275-4dd3-9e75-f3094b36fa2a",
+                        "id":"2110bff8-9813-471a-90ee-e16898258c1e",
                         "alterId":0
                     }
                 ]
@@ -104,7 +104,7 @@
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
@@ -114,13 +114,13 @@
             }
         },
         {
-            "port":3004,
+            "port":5004,
             "listen":"127.0.0.1",
             "protocol":"trojan",
             "settings":{
                 "clients":[
                     {
-                        "password":"986e0d08-b275-4dd3-9e75-f3094b36fa2a"
+                        "password":"2110bff8-9813-471a-90ee-e16898258c1e"
                     }
                 ]
             },
@@ -132,7 +132,7 @@
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
